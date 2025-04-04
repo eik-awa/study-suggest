@@ -1,0 +1,31 @@
+.privacy-policy-page {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f8ff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.privacy-policy-page h1 {
+  text-align: center;
+  color: #192f60;
+  margin-bottom: 20px;
+}
+
+.privacy-policy-page h2 {
+  color: #2c3e50;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.privacy-policy-page p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+/* 各セクションに余白を追加 */
+.privacy-policy-page section {
+  margin-bottom: 30px; /* セクション間の余白を追加 */
+}

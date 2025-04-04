@@ -1,0 +1,31 @@
+/* ヘッダー */
+.header {
+  background-color: #eaf4fc; /* メインの色 */
+  color: #192f60; /* サブの色 */
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #192f60; /* サブの色 */
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}

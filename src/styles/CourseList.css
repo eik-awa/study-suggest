@@ -1,0 +1,222 @@
+/* 全体の背景色とフォント */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* コースリスト全体 */
+.course-list-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff; /* 白背景 */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-list-container h1 {
+  text-align: center;
+  color: #2c3e50; /* モダンな濃い青 */
+  margin-bottom: 20px;
+}
+
+.course-category {
+  margin-bottom: 30px;
+}
+
+.course-category h2 {
+  font-size: 1.5rem;
+  color: #34495e; /* モダンな青みがかったグレー */
+  margin-bottom: 10px;
+}
+
+.course-category ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+/* 各講座のカード */
+.course-item {
+  display: flex; /* 横並びにする */
+  flex-direction: column; /* 縦方向のレイアウト */
+  align-items: flex-start; /* 左揃え */
+  justify-content: flex-start;
+  width: 100%; /* 横幅を親要素いっぱいに広げる */
+  max-width: 80%; /* 最大幅を設定 */
+  height: auto; /* 高さを自動調整 */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  background-color: #ffffff;
+  gap: 15px; /* 画像とテキストの間に余白を追加 */
+}
+
+.course-item:hover {
+  background-color: #f0f8ff; /* ホバー時に薄い青 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-image {
+  width: 100%; /* 画像を横幅いっぱいに広げる */
+  height: auto; /* 高さを自動調整 */
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+.course-info {
+  width: 100%; /* テキスト部分も横幅いっぱいに広げる */
+}
+
+.course-info h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+  white-space: normal; /* テキストを複数行に対応 */
+  overflow-wrap: break-word; /* 長い単語を折り返す */
+  word-break: break-word; /* 必要に応じて単語を分割 */
+}
+
+.course-info p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* モーダルのオーバーレイ */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* モーダルのコンテンツ */
+.modal-content {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.modal-content p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.modal-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #192f60; /* モダンな青 */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.modal-link:hover {
+  background-color: #eaf4fc; /* ホバー時の濃い青 */
+}
+
+/* モーダルの閉じるボタン */
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  color: #e74c3c; /* ホバー時に赤 */
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  .course-list-container {
+    padding: 10px;
+  }
+
+  .course-category ul {
+    display: block; /* 親要素をブロック表示に変更 */
+    gap: 0; /* カード間の余白をリセット */
+    flex-wrap: wrap; /* カードを折り返す */
+  }
+
+  .course-item {
+    flex: 1 1 100%; /* 横幅を100%に設定して1列表示 */
+    width: 100%; /* 横幅を100%に設定して1列表示 */
+    padding: 15px; /* カードの内側の余白を小さくする */
+    margin-bottom: 15px; /* カード間の余白を追加 */
+  }
+
+  .course-info h3 {
+    font-size: 1.2rem; /* タイトルのフォントサイズを小さくする */
+  }
+
+  .course-info p {
+    font-size: 0.9rem; /* 説明文のフォントサイズを小さくする */
+  }
+}
+
+@media (max-width: 480px) {
+  .course-category ul {
+    display: block; /* 親要素をブロック表示に変更 */
+    gap: 0; /* スマホではさらに余白をリセット */
+  }
+
+  .course-item {
+    flex: 1 1 100%; /* 横幅を100%に設定して1列表示 */
+    width: 100%; /* 横幅を100%に設定して1列表示 */
+    padding: 10px; /* さらに余白を小さくする */
+    margin-bottom: 10px; /* カード間の余白を追加 */
+  }
+
+  .course-info h3 {
+    font-size: 1rem; /* タイトルのフォントサイズをさらに小さくする */
+  }
+
+  .course-info p {
+    font-size: 0.8rem; /* 説明文のフォントサイズをさらに小さくする */
+  }
+}

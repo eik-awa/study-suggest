@@ -1,0 +1,75 @@
+.faq-page {
+  padding: 40px; /* 余白を増やす */
+  max-width: 800px;
+  margin: 40px auto; /* 上下にも余白を追加 */
+  font-family: Arial, sans-serif;
+  color: #192f60;
+  background-color: #f0f8ff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-page h1 {
+  text-align: center;
+  color: #192f60;
+}
+
+.faq-page h2 {
+  margin-top: 20px;
+  color: #192f60;
+}
+
+.faq-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-page ul li {
+  margin-bottom: 10px;
+}
+
+.faq-list {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-question {
+  background-color: #eaf4fc; /* メインの色 */
+  color: #192f60;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.faq-question:hover {
+  background-color: #89c3eb; /* サブの色 */
+}
+
+.faq-answer {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #f0f8ff; /* 背景色 */
+  border-radius: 5px;
+  color: #192f60; /* メインの色 */
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #192f60;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}

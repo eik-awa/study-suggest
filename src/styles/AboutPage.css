@@ -1,0 +1,32 @@
+.about-page {
+  padding: 40px; /* 余白を増やす */
+  max-width: 800px;
+  margin: 40px auto; /* 上下にも余白を追加 */
+  font-family: Arial, sans-serif;
+  color: #192f60;
+  background-color: #f0f8ff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-page h1 {
+  text-align: center;
+  color: #192f60;
+}
+
+.about-page p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #89c3eb;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}

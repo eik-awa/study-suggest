@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eaf4fc;
+}
+
+h1,
+h2,
+h3 {
+  color: #192f60;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.course-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 15px;
+  flex: 1 1 calc(25% - 20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.course-item h3 {
+  margin: 0 0 10px;
+}
+
+.study-tips,
+.faq {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.study-tips h2,
+.faq h2 {
+  margin-top: 0;
+}
+
+.placeholder {
+  color: #888;
+  font-style: italic;
+}

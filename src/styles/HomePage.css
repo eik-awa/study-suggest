@@ -1,0 +1,64 @@
+/* 全体のスタイル */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #192f60; /* メインの背景色 */
+  color: #fff; /* 白文字 */
+}
+
+/* ヘッダー */
+.header {
+  background-color: #eaf4fc; /* メインの色 */
+  color: #192f60; /* サブの色 */
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #192f60; /* サブの色 */
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* コンテンツエリア */
+.content {
+  display: flex;
+  margin: 20px;
+}
+
+/* メインコンテンツ */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #eaf4fc; /* 白背景 */
+  border-radius: 8px;
+  color: #192f60; /* メインの色 */
+}
+
+/* フッター */
+.footer {
+  background-color: #eaf4fc; /* メインの色 */
+  color: #192f60; /* サブの色 */
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
